@@ -125,3 +125,11 @@ end)
 # 🎭 Icons Dictions List
 
 **Open This File to see the full icons list [HERE](Dictions-Icons.md)**
+
+In this file you can see the available icons in Lua Land Ui Library.
+
+# 🤩 Themes Dictions List
+
+**Open This File to see the full themes list [HERE]()
+
+In this file you can see the available themes that you can display and design for your script in Lua Land Ui Library.
