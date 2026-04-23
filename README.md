@@ -124,4 +124,4 @@ end)
 
 # 🎭 Icons Dictions List
 
-**Open This File to see the full icons list [HERE]()**
+**Open This File to see the full icons list [HERE](Dictions-Icons.md)**
