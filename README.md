@@ -14,6 +14,7 @@ Lua Land Ui Library has a complete and good ui elements, the following are:
 - TextLabel
 - Slider
 - Toogles
+- Checkbox
 - Dropdown
 - Search Bar
 
