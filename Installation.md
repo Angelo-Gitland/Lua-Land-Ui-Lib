@@ -36,13 +36,6 @@ local Window = lib:CreateWindow({
 	Subtitle  = "by Angelo",
 	TitleIcon = "house",
 	Theme     = "Default",
-
-	Intro = {
-		Title    = "Lua Land Ui Library",
-		Subtitle = "Developed By LLH Lua Land",
-		Icon     = "star",
-	},
-})
 ```
 
 **Setting-Up Intro:**
