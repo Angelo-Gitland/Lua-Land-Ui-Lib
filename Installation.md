@@ -34,15 +34,15 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Angelo-Gi
 local Window = lib:CreateWindow({
 	Title     = "Lua Land Ui Library",
 	Subtitle  = "Developed By LLH Lua Land",
-	TitleIcon = "house", -- 
-	Theme     = "Default", 
+	TitleIcon = "house", -- Find available icons here: Dictions-Icons.md
+	Theme     = "Default", -- Find available themes here: Dictions-Themes.md
 ```
 
 **Setting-Up Intro:**
 
 ```lua
 Intro = {
-		Title    = "Lua Land Ui Library - Example",
+		Title    = "Lua Land Ui Library",
 		Subtitle = "Developed By LLH Lua Land",
 		Icon     = "home",
 	},
