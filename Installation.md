@@ -32,10 +32,10 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Angelo-Gi
 
 ```lua
 local Window = lib:CreateWindow({
-	Title     = "Lua Land Hub",
-	Subtitle  = "by Angelo",
-	TitleIcon = "house",
-	Theme     = "Default",
+	Title     = "Lua Land Ui Library",
+	Subtitle  = "Developed By LLH Lua Land",
+	TitleIcon = "house", -- 
+	Theme     = "Default", 
 ```
 
 **Setting-Up Intro:**
