@@ -11,6 +11,7 @@ Using Lua Land Ui Library is better because it is the faster ui library that you
 Lua Land Ui Library has a complete and good ui elements, the following are:
 
 - TextButton
+- Textbox
 - TextLabel
 - Slider
 - Toogles
@@ -31,11 +32,12 @@ local lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/Angelo-Gi
 **Setting-Up the windows:**
 
 ```lua
-local Window = lib:CreateWindow({
-	Title     = "Lua Land Ui Library",
-	Subtitle  = "Developed By LLH Lua Land",
-	TitleIcon = "house", -- Find available icons here: Dictions-Icons.md
-	Theme     = "Default", -- Find available themes here: Dictions-Themes.md
+local Window = Library:CreateWindow({
+	Title = "Lua Land Ui Library",
+	Subtitle = "Developed By LLH Lua Land",
+	TitleIcon = "zap", -- -- Find available icons here: Dictions-Icons.md
+	Theme = "Default", -- -- Find available themes here: Dictions-Themes.md
+	Keybind = Enum.KeyCode.RightControl, -- Keybind for toggle
 ```
 
 **Setting-Up Intro:**
@@ -45,6 +47,27 @@ Intro = {
 		Title    = "Lua Land Ui Library",
 		Subtitle = "Developed By LLH Lua Land",
 		Icon     = "home",
+	},
+})
+```
+
+**Setting-Up Key system Window:**
+
+```lua
+	KeySystem = {
+		Title = "Lua Land Key System",
+		Subtitle = "Enter key to continue!",
+		TitleIcon = "key-round", -- Find available icons here: Dictions-Icons.md
+		Theme = "Fire", -- Find available themes here: Dictions-Themes.md
+		Key = "LuaLandUiNew!",
+		Placeholder = "Enter your key...",
+		GetLink = "https://discord.gg/Zame2JAGDr",
+		NotifTitle = "Lua Land Key System",
+		NotifIcon = "clipboard-check",
+		NotifDesc = "The key link was copied to your clipboard!",
+		Script = function()
+			loadstring(game:HttpGet("https://obfuscatorhub.vercel.app/api/JpDNqmfp"))() -- Script that will load if key is correct
+		end,
 	},
 })
 ```
@@ -69,6 +92,20 @@ HomeTab:CreateSection("Welcome to Lua Land Ui Library!")
 
 ```lua
 HomeTab:CreateLabel("Developed By LLH Lua Land")
+```
+
+**Creating a Textbox:**
+
+```lua
+HomeTab:CreateTextbox({
+	Title = "Textbox",
+	Placeholder = "Type or input a text here!",
+	Limit = 20, -- The limit of textbox text inputting.
+	ClearOnFocus = false,
+}, function(text, enterPressed)
+	StatusLabel.Text = "Status: textbox = " .. tostring(text)
+	print("[Lua Land] Textbox:", text, "Enter:", enterPressed)
+end)
 ```
 
 **Creating a TextButton:**
