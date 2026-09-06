@@ -21,6 +21,7 @@ Lua Land Ui Library has a complete and good ui elements, the following are:
 - Checkbox
 - Dropdown
 - Search Bar
+- Settings Tab (automatic)
 
 Those are the list of ui elements in Lua Land Ui Library that you can create
 
@@ -41,6 +42,7 @@ local Window = Library:CreateWindow({
 	TitleIcon = "zap", -- -- Find available icons here: Dictions-Icons.md
 	Theme = "Default", -- -- Find available themes here: Dictions-Themes.md
 	Keybind = Enum.KeyCode.RightControl, -- Keybind for toggle
+	ToggleImage = "rbxassetid://123456789", -- Image for the floating toggle button
 ```
 
 **Setting-Up Intro:**
@@ -83,6 +85,16 @@ local HomeTab = Window:CreateTab({
 	Icon      = "house",
 	SearchBar = false, -- Set to true if you want this tab with Search Bar
 })
+```
+
+**Automatic Settings Tab:**
+
+```lua
+-- The Settings tab is created automatically after your custom tabs.
+-- It includes Save Config, Delete Slot, Load Slot, Theme, Keybind,
+-- and Toggle Image settings.
+-- Configs support up to 5 slots and can be renamed or deleted.
+-- Toggle Image accepts an asset id such as "rbxassetid://123456789".
 ```
 
 **Creating a Section:**
